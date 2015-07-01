@@ -15,9 +15,11 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "PT Sans", sans-serif;
+  
   color: #33414a;
   background-color: #a4a4a5;
+  width: 100%;
+  margin: 0 auto;
 }
 
 a {
@@ -30,6 +32,7 @@ h3 {
   font-weight: normal;
   color: #000000;
   margin-top: 1em;
+  display: inline-block;
 }
 
 
@@ -43,6 +46,7 @@ header {
   z-index: 3;
   height: 50px;
   width: 100%;
+  font-family: 'montserratregular';
   top: 0;
   left: 0;
   background-color: #ffffff;
@@ -123,6 +127,7 @@ header::before {
   position: absolute;
   right: 0;
   top: 0;
+
   height: 100%;
   width: 50px;
   /* hide text */
@@ -211,6 +216,7 @@ header::before {
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
   background: #104668;
+  font-family: 'montserratregular';
   -webkit-transition: visibility 0s 0.3s;
   -moz-transition: visibility 0s 0.3s;
   transition: visibility 0s 0.3s;
@@ -404,40 +410,121 @@ header::before {
 /*--------------------------------
      css animation
 --------------------------------*/
-.u-title{
-  color: #1d8735;
-  font-weight: normal;
-  font-size: 2.5em;
-  padding-bottom: .5em;
-  width: 60%;
-  text-align: center;
-  margin: 0 auto;
-
-}
-.title-containerDefault{
-  max-width: 800px;
-  margin: 0 auto;
-  /*border-bottom: 2px dashed #1d8735;*/
-}
-.u-containerDefault{
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
 .Animation{
-  margin-top: 3.5em;
-  text-align: center;
+    font-family: 'Roboto';
+ 
+  }
+@media only screen and (min-width: 915px) {
+  .Animation{
+    margin-top: 3.5em;
+ 
+  }
+
+  .u-containerDefault{
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+
+
+  .Main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    align-items: center;
+
+
+  }
+  .Main-item-img{
+    display: inline-block;
+    
+    
+    
+  }
+  .Main-item{
+    display: inline-block;
+    
+    max-width: 400px;
+    margin: 2em 2em;
+  }
+
+  .Main-step-description{
+    font-size: 1em;
+    color: #515151;
+    margin: 1em 0;
+    width: 100%;
+    
+  }
+
+  .Step-image{
+    margin: 0;   
+    width:100%;
+    
+
+    
+  }  
 }
-.Main-container{
+@media only screen and (min-width: 1173px) {
+  .Main-item-img{
+    margin-right: 3.5em;
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 1236px) {
+  .Main-item-img{
+    margin-right: 0;
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 1081px) {
+  .Main-item-img{
+    max-width: 400px;
+  }
+}
+@media only screen and (max-width: 915px) {
+  .Animation{
+    text-align: center;
+  }
+  .u-containerDefault{
+    max-width: 915px;
+    margin: 0 auto;
+
+  }
+
+  .Main-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
-}
-.Main-item{
-  display: inline-block;
+    align-items: center;
 
-  margin-bottom: 2em;
+  }
+  .Main-item{
+    display: inline-block;
+    margin-left: 1em;
+    margin-bottom: 2em;
+  }
+
+  .Main-item-img{
+    display: inline-block;
+    margin-left: 1em;
+    margin-bottom: 2em;
+  }
+
+  .Main-step-description{
+    font-size: 1em;
+    color: #515151;
+    margin: 1em 0;
+
+    max-width: 400px;
+  }
+
+  .Step-image{
+    width: 100%;
+    max-width: 600px;
+  }
 }
 .icon-span{
   color: #104668;
@@ -451,49 +538,64 @@ header::before {
     color: #4862a3;
     font-size: 2.5em;
 }
-.Main-step-description{
-  font-size: 1em;
-  color: #515151;
-  margin: 1em 0;
-  max-width: 400px;
-
-
-}
-.Step-image{
-  
-  width: 100%;
-  border-width: 2em 2em;
-  border-image:url("../img/lap.png") 31 60 37 64 round;
-}
-
-.sobre{
+.landing{
   position:absolute;
-  top:26%;
-  left:26%;
+  top:21%;
+  left:14%;
   border:none;
+  width: 72.5%;
 
 }
-.sobre-cel{
+.login{
   position:absolute;
-  top:26%;
-  left:15%;
+  top:21%;
+  left:14%;
+  border:none;
+  width: 72.5%;
+}
+.sobre-form{
+  position:absolute;
+  top:21%;
+  left:14%;
+  width: 72.5%;
   border:none;
 
 }
 .sobre-apro{
   position:absolute;
-  top:26%;
-  left:26%;
+  top:21%;
+  left:14%;
+  width: 72.5%;
+  border:none;
+
+}
+.dash{
+  position:absolute;
+  top:21%;
+  left:14%;
+  width: 72.5%;
   border:none;
 
 }
 
+.Main-container-foo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
+
+}
 .footer{
   background-color: #104668;
   width: 100%;
   color: white;
     font-size: .8em;
+    font-family: 'montserratregular';
+}
+.Main-item-foo{
+  display: inline-block;
+
+  margin-bottom: 2em;
 }
 .footer-description{
   margin: 2em;
